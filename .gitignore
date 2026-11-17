@@ -85,3 +85,6 @@ desktop.ini
 *.db
 *.pid
 *.seed
+
+# ===== 本地核验临时产物 =====
+.tmp-verify/

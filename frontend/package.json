@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "verify:incremental": "esbuild scripts/verify-incremental.ts --bundle --platform=node --format=esm --outfile=.tmp-verify/verify-incremental.mjs && node .tmp-verify/verify-incremental.mjs"
   },
   "dependencies": {
     "pinia": "^2.1.7",
